@@ -1,0 +1,17 @@
+
+dashboard/.next/
+
+dashboard/node_modules/
+
+dashboard/.DS_Store
+
+dashboard/yarn.lock
+
+.DS_Store
+
+api/node_modules/
+
+api/yarn.lock
+
+dashboard/yarn-error.log
+
