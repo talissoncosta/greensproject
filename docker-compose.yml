@@ -1,0 +1,20 @@
+ api:  
+  build: .  
+  container_name: api
+  dockerfile: DockerfileApi
+  command: bash -c "yarn install; yarn dev "  
+  ports:  
+  - "3001:3001"  
+  volumes:  
+  - ./api:/usr/src/api  
+ app:  
+  build: .
+  container_name: app
+  dockerfile: DockerfileApp
+  command: bash -c "yarn install; yarn run dev "  
+  ports:  
+  - "3000:3000"  
+  volumes:  
+  - ./dashboard:/usr/src/dashboard  
+  links: 
+    - "api"

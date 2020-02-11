@@ -1,0 +1,12 @@
+ FROM node:latest  
+   
+ RUN mkdir -p /usr/src/dashboard  
+ RUN npm install nodemon -g  
+   
+ WORKDIR /usr/src/dashboard  
+ COPY dashboard /usr/src/dashboard
+ RUN yarn install 
+   
+ EXPOSE 3000
+   
+ CMD ["yarn", "run dev"]
