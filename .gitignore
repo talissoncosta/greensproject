@@ -15,3 +15,5 @@ api/yarn.lock
 
 dashboard/yarn-error.log
 
+
+*.lock
